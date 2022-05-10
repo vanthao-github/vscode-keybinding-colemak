@@ -14,6 +14,8 @@
 // cmd+e: jump to bottom
 // cmd+shift+e: mark from current cursor to bottom
 // cmd+shift+u: mark from current cursor to top
+// cmd+shift+n: mark from current cursor to left
+// cmd+shift+i: mark from current cursor to right
 // ctrl+x: delete left character
 // alt+ctrl+d: delete current line
 // alt+ctrl+n: jump to left of a word
@@ -23,7 +25,7 @@
 // cmd + enter: add new line right below current line
 // cmd + shift + enter: add new line right aboce current line
 // ctrl + z: delete right
-//  alt + shift + d: go to defination
+// alt + shift + d: go to defination
 
 [
   {
@@ -87,13 +89,23 @@
     "when": "textInputFocus"
   },
   {
-    "key": "shift+cmd+e",
-    "command": "cursorEndSelect",
+    "key": "shift+cmd+u",
+    "command": "cursorTopSelect",
     "when": "textInputFocus"
   },
   {
-    "key": "shift+cmd+u",
+    "key": "shift+cmd+e",
+    "command": "cursorBottomSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+n",
     "command": "cursorHomeSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "cursorEndSelect",
     "when": "textInputFocus"
   },
   {
