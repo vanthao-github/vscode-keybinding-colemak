@@ -185,6 +185,11 @@
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
   {
+    "key": "shift+alt+e",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
     "key": "ctrl+r",
     "command": "workbench.action.quickOpenSelectPrevious",
     "when": "inQuickOpen"
@@ -193,5 +198,29 @@
     "key": "ctrl+d",
     "command": "-deleteRight",
     "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "cursorWordEndRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "deleteRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+ctrl+9",
+    "command": "editor.emmet.action.matchTag",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+cmd+0",
+    "command": "editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+cmd+n",
+    "command": "workbench.action.files.newUntitledFile"
   }
 ]
